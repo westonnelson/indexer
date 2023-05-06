@@ -488,6 +488,34 @@ export const getNetworkSettings = (): NetworkSettings => {
         lastBlockLatency: 5,
         headBlockDelay: 10,
         subDomain: "api-arbitrum",
+        whitelistedCurrencies new Map ([
+          [
+            "0x912CE59144191C1204E64559FE8253a0e49E6548", // MUST BE LOWERCASE
+            {
+              contract: "0x912CE59144191C1204E64559FE8253a0e49E6548",
+              name: "Arbitrum",
+              symbol: “ARB”,
+              decimals: 18,
+              metadata: { // OPTIONAL
+                image:
+                  "{https://assets.coingecko.com/coins/images/16547/small/photo_2023-03-29_21.47.00.jpeg?1680097630}", 
+              },
+            },
+          ],
+          [
+            "0xb261104a83887ae92392fb5ce5899fcfe5481456", // MUST BE LOWERCASE
+            {
+              contract: "0xb261104a83887ae92392fb5ce5899fcfe5481456",
+              name: “NFTEarth”,
+              symbol: “NFTE”,
+              decimals: 18,
+              metadata: { // OPTIONAL
+                image:
+                  "{https://assets.coingecko.com/coins/images/29116/small/20230223_224134.jpg?1677224110}", 
+              },
+            },
+          ],
+        ]), 
         coingecko: {
           networkId: "arbitrum-one",
         },
